@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fragebogen - Frederik Paul</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/project.css">
+
+</head>
+<body>
+<div class="container">
+  <h2></br><center><p class="text-dark">Fragebogen für die Bachelorarbeit von Frederik Paul</p></center></h2>
+  <div class="card">
+  <div class="card-body">
+    <div class="row">
+    </div>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 12%;" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100">12%</div>
+    </div>
+      <p><b>Welchen Beruf übten Sie aus, bevor Sie den Lehrberuf ergriffen?
+        (Quereinsteiger/ -in) </b></p>
+      <form action="process_q4.php" method="post" name="login_form"> 			
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="3" checked>
+          <label class="form-check-label" for="textfeld">
+            <select class="form-control" name="exampleFormControlSelect1" id="exampleFormControlSelect1">
+              <option value="1">Ein Beruf im biologischen Bereich</option>
+              <option value="2">Ein Beruf im chemischen Bereich</option>
+              <option value="3">Ein Beruf im theologischen Bereich</option>
+              <option value="4">Ein Beruf im geographischen Bereich</option>
+              <option value="5">Ein Beruf im Bereich „Fremdsprachen“ und Übersetzungstätigkeiten (Linguistik)</option>
+              <option value="6">Ein Beruf im historischen Bereich</option>
+              <option value="7">Ein Beruf im hauswirtschaftlichen Bereich</option>
+              <option value="8">Ein Beruf im Bereich „Informatik“</option>
+              <option value="9">Ein Beruf im künstlerischen Bereich</option>
+              <option value="10">Ein Beruf im musikalischen Bereich</option>
+              <option value="11">Ein Beruf im philosophischen Bereich</option>
+              <option value="12">Ein Beruf im Bereich „Physik“</option>
+              <option value="13">Ein Beruf im Bereich „Psychologie“</option>
+              <option value="14">Ein Beruf im Bereich „Pädagogik“</option>
+              <option value="15">Ein Beruf im Bereich „Rechtswissenschaft“</option>
+              <option value="16">Ein Beruf im sozialwissenschaftlichen Bereich
+                (Politikwissenschaft, Soziologie, Wirtschaftswissenschaft)</option>
+              <option value="17">Ein Beruf im Bereich „Sport“</option>
+              <option value="18">Ein Beruf im Bereich „Technik“</option>
+              <option value="19">Ein Beruf im Bereich „Textilgestaltung“</option>
+              <option value="-99">Keine Angabe</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="form-group">
+            
+          </div>
+      
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="3">
+            <label class="form-check-label" for="textfeld">
+              Sonstiges, nämlich: <textarea type="text" rows="3" class="form-control" name="exampleFormControlInput1" id="exampleFormControlInput1" placeholder=""></textarea>
+            </label>
+          </div> </br>
+          <button type="submit" class="btn btn-primary">>> Antwort abgeben </button>
+
+      </form>
+</br>
+</div>
+  </div>
+
+  </div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

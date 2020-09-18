@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fragebogen - Frederik Paul</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/project.css">
+
+</head>
+<body>
+<div class="container">
+  <h2></br><center><p class="text-dark">Fragebogen für die Bachelorarbeit von Frederik Paul</p></center></h2>
+  <div class="card">
+  <div class="card-body">
+    <div class="row">
+    </div>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">33%</div>
+    </div>
+      <p><b>Bitte nennen Sie Gründe dafür, wenn Ihre Zeitspanne von der 5-jährigen
+        Referendariats- bzw. Probezeit abweicht (Mehrfachnennungen möglich)</b></p>
+      <form action="process_q9_1.php" method="post" name="login_form"> 			
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="1">
+        <label class="form-check-label" for="exampleRadios1">
+            Ich bin während des Referendariats oder der Probezeit krank geworden (länger als drei
+Monate), die Zeit wurde angehängt.
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios2" value="2">
+        <label class="form-check-label" for="exampleRadios2">
+            Ich bin während des Referendariats oder der Probezeit schwanger geworden oder habe
+Erziehungsurlaub genommen (länger als drei Monate), die Zeit wurde angehängt.
+       </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios2" value="3">
+        <label class="form-check-label" for="exampleRadios2">
+            Ich habe einen Angehörigen betreut oder gepflegt
+               </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios3" value="4">
+        <label class="form-check-label" for="exampleRadios3">
+            Ich habe keine passende Stelle für meine Probezeit gefunden
+        </label>
+      </div> 
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios5" id="exampleRadios3" value="5">
+        <label class="form-check-label" for="exampleRadios3">
+            Ich hatte Probleme mit der Bewährung oder Eignung.	
+        </label>
+      </div> 
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios6" id="exampleRadios3" value="6">
+        <label class="form-check-label" for="exampleRadios3">
+            Ich habe Teilzeit gearbeitet
+        </label>
+      </div> 
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios7" id="exampleRadios3" value="7">
+        <label class="form-check-label" for="exampleRadios3">
+          Ich habe nach meinem Referendariat als angestellte/r Lehrer/in gearbeitet und erst später die Probezeit absolviert.
+        </label>
+      </div> 
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="3">
+        <label class="form-check-label" for="textfeld">
+            Andere Gründe, nämlich: <textarea type="text" rows="3" class="form-control" name="exampleFormControlInput1" id="exampleFormControlInput1" placeholder=""></textarea>
+        </label>
+      </div> 
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios9" id="exampleRadios3" value="-99">
+        <label class="form-check-label" for="exampleRadios3">
+            Keine Angabe
+        </label>
+      </div> 
+
+    </br>
+      <button type="submit" class="btn btn-primary">>> Antwort abgeben </button>
+
+      </form>
+</br>
+</div>
+  </div>
+
+  </div>
+</div>
+</div>
+
+<script type="text/javascript">
+  var radio_button_list = document.querySelectorAll('.form-check-input');
+  //radio_button_list.push(document.getElementsByName('exampleRadios2'));
+  var radio_button;
+  var count;
+  for(count = 0; count<radio_button_list.length; count++)
+  {
+   radio_button_list[count].onclick = function(){
+    if(radio_button == this)
+    {
+     this.checked = false;
+     radio_button = null;
+    }
+    else
+    {
+     radio_button = this;
+    }
+   };
+  }
+ 
+ </script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
